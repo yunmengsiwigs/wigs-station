@@ -10,7 +10,6 @@
     <modules>
         <module>yms-wigs-common</module>
         <module>yms-wigs-facade</module>
-        <module>yms-wigs-facade</module>
         <module>yms-wigs-manager</module>
         <module>yms-wigs-service</module>
         <module>yms-wigs-web</module>
