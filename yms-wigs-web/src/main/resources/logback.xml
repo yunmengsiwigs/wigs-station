@@ -5,7 +5,7 @@
 			<!-- %.-1level 只显示信息级别的首字母,%-5level 左对齐显示信息级别全称 -->
 			<!-- 如需自定义关键字，用 %mdc{键名} 表示,程序中用MDC.put("键名","键值")设置，可动态设置 [%logger:%line]-->
 			<!--<Pattern>[%date{yyyy-MM-dd HH:mm:ss}] [%-5level][%C{40}][%line][%M] &#45;&#45;%mdc{client} [%X{TRACE_LOG_ID}]-->
-			<Pattern>[%d{yyyy-MM-dd HH:mm:ss:SSS}][%-4level][%F:%M:%L][{TRACE_LOG_ID}]%msg%n</Pattern>
+			<Pattern>[%d{yyyy-MM-dd HH:mm:ss:SSS}][%-4level][%C:%M:%L][%X{TRACE_LOG_ID}]%msg%n</Pattern>
 		</encoder>
 	</appender>
 
@@ -19,7 +19,7 @@
 		</filter>
 		<File>/data/appLogs/yms-market-stock.log</File>
 		<encoder>
-			<Pattern>[%d{yyyy-MM-dd HH:mm:ss:SSS}][%-4level][%F:%M:%L][{TRACE_LOG_ID}]%msg%n</Pattern>
+			<Pattern>[%d{yyyy-MM-dd HH:mm:ss:SSS}][%-4level][%C:%M:%L][%X{TRACE_LOG_ID}]%msg%n</Pattern>
 			<charset>UTF-8</charset>
 		</encoder>
 		<!-- 配置滚动的策略 -->
